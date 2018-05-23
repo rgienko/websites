@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="description" content="Strategic Property Management is a full service property management company that strives to make leasing an office space as simple as possible," />
+	<meta name="keywords" content="Strategic Property Management,Executive Offices,executive suites, barrington, office space, space for lease, barrington woods,barrington,south barrington, north barringtong, 	barrington hilss, office, space, commerical property, management, property management," />
+	
+	<title>Suites at Barrington Woods</title>
+
+	<link rel="stylesheet" href = "format.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+	<script type = "text/javascript" src="scripts/scripts.js"></script>
+	<script type = "text/javascript" src="scripts/slideshow.js"></script>
+
+	<script>
+			window.onclick = function(event) {
+				   if (!event.target.matches('#serButton')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+	</script>
+</head>
+
+<body>
+	<!--This is the Header-->
+	<div id = "shadow" class = "header">
+		<div class = "headerLeft">
+			<!--This contains the logo via CSS-->	
+		</div>
+		
+		<div class = "headerRightOne">
+			<span id ="headerText">The Executive Suites at Barrington Woods</span>
+		</div>
+
+		<div class = "headerRightTwo">
+			<h3 style="font-size:14pt">
+				Full furnished executive suites,<br>
+				virtual offices, & meeting facilities
+			</h3>
+		</div>
+	</div>
+		
+	
+	<div class = "navigation">
+        <button type = "button" class ="hvr-underline-reveal" value = "Home" onclick = "goHome()">Home</button>
+        <div class = "dropDown">
+	        <button type = "button" id = "serButton" class ="hvr-underline-reveal" value = "Services" onmouseover = "showServices()" onclick = "getServices()">Services</button>
+            <div id = "dropDown" class = "dropdown-content">
+                <a href = "virtual.htm">Virtual Offices</a>
+                <a href = "facility.htm">Executive Suites</a>
+                <a href = #>Meeting Facilities</a>
+            </div>
+        </div>
+        <button type = "button" id = "facilityButton" class ="hvr-underline-reveal" value = "Facility" onclick = "getFacility()">Our Facility</button>
+        <button type = "button" id = "abtButton" class ="hvr-underline-reveal" value = "About" onclick = "getAbout()">About</button>
+        <button type = "button" id = "contactButton" class ="hvr-underline-reveal" value = "Contact" onclick = "getContact()">Contact Us</button>	
+    </div>
+
+	<div class = "graphicBox" id = "shadow">
+		<img src = "images/buildingpic3edit.jpg">
+	</div>
+
+	<div class = "content" id = "shadow">
+		<div class = "contentLeft">
+			<h3>
+				Welcome to the Suites at Barrington Woods
+			</h3>
+
+			<p>
+				Thank you for visiting the Suites at Barrington Woods, the northwest suburb's premier Executive Suites location. Conveniently located in Barrington, IL, near the intersection of Barrington Road and Dundee Road, we provide office space solutions to support your business and help it grow. Whether you are looking for your own fully furnished office, or just a professional location to host a meeting, we offer a variety of packages tailored to your individual needs. 
+				<br><br>
+				The Suites at Barrington Woods offers 16 fully furnished private offices, receptionist services, and conference room facilities. Let us handle the headaches of running your office. The support you need can be found here – ready to go - so that you can focus your valuable time on what you do best. 
+				<br><br>
+				We welcome you to explore the Suites at Barrington Woods here online, and then in person, to see what we can do for you. To schedule a visit, or receive more information, 	please contact us at 1-224-655-6622 or send us a message <a href = "contact.htm">here</a>. 
+				<br><br>
+				Thank you very much for your time. We look forward to working with you.
+			</p>
+		</div>
+		<div class = "contentRight">
+			<h3>
+				Location:
+			</h3>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.942926227255!2d-88.13413248468571!3d42.13010505758514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e1f05d8da2b939c!2sSuites+at+Barrington+Woods!5e0!3m2!1sen!2sus!4v1520450282397" width="425" height="303" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<div class="footer">
+        <div class = "footerList">
+			<button>&copy; RCG Management Services, LLC</button>
+            <button onclick="getTerms()" href="terms.htm" style = "margin-left:5px;">Terms of Use</button>
+			<button onclick="getPrivacy()" href="privacy.htm">Privacy Policy</button>
+        </div>
+    </div>
+	
+</body>
+
+

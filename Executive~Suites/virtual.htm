@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+    <head>
+	    <meta name="description" content="Strategic Property Management is a full service property management company that strives to make leasing an office space as simple as possible," />
+	    <meta name="keywords" content="Strategic Property Management,Executive Offices,executive suites, barrington, office space, space for lease, barrington woods,barrington,south barrington, north barringtong, barrington hilss, office, space, commerical property, management, property management," />
+	
+	    <title>Suites at Barrington Woods</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+	    <link rel="stylesheet" href = "format.css">
+	    <script type = "text/javascript" src="scripts/scripts.js"></script>
+        <script type = "text/javascript" src="scripts/slideshow.js"></script>
+        <script>
+			window.onload = function() {serButtonEvent()}
+        </script>
+        <script>
+                window.onclick = function(event) {
+                       if (!event.target.matches('#serButton')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+        </script>
+    </head>
+
+    <body>
+
+        <!--This is the Header-->
+	    <div id = "shadow" class = "header">
+            <div class = "headerLeft">
+                <!--This contains the logo via CSS-->	
+            </div>
+            
+            <div class = "headerRightOne">
+                <span id ="headerText">The Executive Suites at Barrington Woods</span>
+            </div>
+    
+            <div class = "headerRightTwo">
+                <h3 style="font-size:14pt">
+                    Full furnished executive suites,<br>
+                    virtual offices, & meeting facilities
+                </h3>
+            </div>
+        </div>
+
+		<div class = "navigation">
+            <button type = "button" class ="hvr-underline-reveal" value = "Home" onclick = "goHome()">Home</button>
+            <div class = "dropDown">
+            <button type = "button" id = "serButton" class ="hvr-underline-reveal" value = "Services" onclick = "getServices()">Services</button>
+                <div id = "dropDown" class = "dropdown-content">
+                    <a href = "virtual.htm">Virtual Offices</a>
+                    <a href = "facility.htm">Executive Suites</a>
+                    <a href = #>Meeting Facilities</a>
+                </div>
+            </div>
+            <button type = "button" id = "facilityButton" class ="hvr-underline-reveal" value = "Facility" onclick = "getFacility()">Our Facility</button>
+            <button type = "button" id = "abtButton" class ="hvr-underline-reveal" value = "About" onclick = "getAbout()">About</button>
+            <button type = "button" id = "contactButton" class ="hvr-underline-reveal" value = "Contact" onclick = "getContact()">Contact Us</button>	
+        </div>
+
+        <div id = "virtualContainer" class = "virtualContainer">
+            <div id = "virtualHome" class = "virtualHome">
+                <h3>First Impressions Matter</h3>
+
+                <p>
+                    With a virtual office at Barrington Woods, you'll get the image you want at the price you want. 
+                </p>
+
+                <h4>Here's what we offer:</h4>
+            </div>
+            
+            <div id = "servicesNavRowOne" class = "servicesNavigation">
+                <div id = "vOne" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Telephone Answering Service
+                    </a>
+                </div>
+                <div id = "vTwo" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Mail Forwarding
+                    </a>
+                </div>
+                <div id = "vThree" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Call Forwarding
+                    </a>
+                </div>	
+            </div>
+                
+            <div id = "servicesNavRowTwo" class = "servicesNavigation">
+                <div id = "vFour" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Mailbox
+                    </a>
+                </div>
+                    
+                <div id = "vFive" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Conference Room Access
+                    </a>
+                </div>
+                <div id = "vSix" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Receptionist
+                    </a>
+                </div>
+            </div>
+                
+            <div id = "servicesNavRowThree" class = "servicesNavigation">        
+                <div id = "vSeven" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Local Number with Voicemail
+                    </a>
+                </div>            
+                <div id = "vEight" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()">
+                    <a>
+                        Business Address
+                    </a>
+                </div>
+                <div id = "vNine" class = "hvr-fade" onmouseover="included()" onmouseout="revIncluded()" onclick = "getFacility()">
+                    <a>
+                        Executive Suites
+                    </a>
+                </div>
+            </div>
+
+            <div class = "virtualBottom">
+                <p>    
+                    Whether you're expanding into new markets and need a new place to work or just need someone to answer your phone and handle your mail.  Contact us <a href = "contact.htm">here</a> to setup your virtual office today.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class = "footerList">
+                <button>&copy; RCG Management Services, LLC</button>
+                <button onclick="getTerms()" href="terms.htm" style = "margin-left:5px;">Terms of Use</button>
+                <button onclick="getPrivacy()" href="privacy.htm">Privacy Policy</button>
+            </div>
+        </div>
+
+    </body>
+</html>

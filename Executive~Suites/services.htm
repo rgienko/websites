@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+    <head>
+	    <meta name="description" content="Strategic Property Management is a full service property management company that strives to make leasing an office space as simple as possible," />
+	    <meta name="keywords" content="Strategic Property Management,Executive Offices,executive suites, barrington, office space, space for lease, barrington woods,barrington,south barrington, north barringtong, 	barrington hilss, office, space, commerical property, management, property management," />
+	
+	    <title>Suites at Barrington Woods</title>
+
+		<link rel="stylesheet" href = "format.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+	    <script type = "text/javascript" src="scripts/scripts.js"></script>
+		<script type = "text/javascript" src="scripts/slideshow.js"></script>
+		<script>
+			window.onload = function() {serButtonEvent()}
+		</script>
+		<script>
+			window.onclick = function(event) {
+   				if (!event.target.matches('#serButton')) {
+        			var dropdowns = document.getElementsByClassName("dropdown-content");
+        			var i;
+        			for (i = 0; i < dropdowns.length; i++) {
+            			var openDropdown = dropdowns[i];
+            			if (openDropdown.classList.contains('show')) {
+                			openDropdown.classList.remove('show');
+                		}
+            		}
+        		}
+    		}
+		</script>
+	
+    </head>
+
+    <body>
+	
+	    <div id = "shadow" class = "header">
+		    <div class = "headerLeft">
+			    <!--This contains the logo via CSS-->	
+		    </div>
+		
+		    <div class = "headerRightOne">
+			    <span id ="headerText">The Executive Suites at Barrington Woods</span>
+		    </div>
+		
+		    <div class = "headerRightTwo">
+				<h3 style="font-size:14pt">
+					Full furnished executive suites,<br>
+					virtual offices, & meeting facilities
+				</h3>
+    		</div>
+		</div>
+
+		<div class = "navigation">
+			<button type = "button" class ="hvr-underline-reveal" value = "Home" onclick = "goHome()">Home</button>
+			<div class = "dropDown">
+			<button type = "button" id = "serButton" class ="hvr-underline-reveal" value = "Services" onclick = "getServices()">Services</button>
+				<div id = "dropDown" class = "dropdown-content">
+					<a href = "virtual.htm">Virtual Offices</a>
+					<a href = "facility.htm">Executive Suites</a>
+					<a href = #>Meeting Facilities</a>
+				</div>
+			</div>
+			<button type = "button" id = "facilityButton" class ="hvr-underline-reveal" value = "Facility" onclick = "getFacility()">Our Facility</button>
+			<button type = "button" id = "abtButton" class ="hvr-underline-reveal" value = "About" onclick = "getAbout()">About</button>
+			<button type = "button" id = "contactButton" class ="hvr-underline-reveal" value = "Contact" onclick = "getContact()">Contact Us</button>	
+		</div>
+		
+		<div class = "serGraphicBox" id = "shadow">
+
+			<div class = "serGraphicBoxTxt">
+				<h3>You need it, we provide it</h3>
+				<p>
+					We offer a variety of products and services so that you can pick the ones that are right for you and your budget. Just choose the level of support you need from us and keep control of your costs and your time.
+				</p>
+			</div>
+		</div>
+
+		<div class = "servContent" id = "shadow">
+			<div class = "serContentOffices">
+				<a href = "facility.htm" target="_parent">
+					<h3>Offices</h3>
+					<img src = "images/chair.jpg" style = "width:250px">
+				</a>
+				<p>Full furnished office space for as long, <br> and as often, as you need it</p>
+			</div>
+			
+			<div class = "vl"></div>
+
+			<div class = "serContentVirtual">
+				<a href = "virtual.htm" target="_parent">
+					<h3>Virtual Offices</h3>
+					<img src = "images/receptionist.jpg" style = "height: 225px;width:260px;">
+				</a>
+				<p>The image you want, <br>at the price you want</p>
+			</div>
+
+			<div class = "vl"></div>
+
+			<div class = "serContentMeeting">
+				<a>
+					<h3>Meeting Facilities</h3>
+					<img src = "images/conference.JPG" style="height:225px; width: 260px;">
+				</a>
+				<p>Fully equipped meeting and conference facilities when you need them</p>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<div class = "footerList">
+				<button>&copy; RCG Management Services, LLC</button>
+				<button onclick="getTerms()" href="terms.htm" style = "margin-left:5px;">Terms of Use</button>
+				<button onclick="getPrivacy()" href="privacy.htm">Privacy Policy</button>
+			</div>
+		</div>
+    </body>
+</html>
